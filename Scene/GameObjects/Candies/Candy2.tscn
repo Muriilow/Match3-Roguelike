@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7i6jx1lgpper"]
+
+[ext_resource type="Script" uid="uid://d30cqa34ye5hp" path="res://Script/Candy.cs" id="1_22byn"]
+[ext_resource type="Texture2D" uid="uid://qq881rnyfhos" path="res://Sprite/candy2.png" id="2_22byn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_22byn"]
+size = Vector2(130, 130)
+
+[node name="Candy" type="Node2D"]
+script = ExtResource("1_22byn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_22byn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_22byn")

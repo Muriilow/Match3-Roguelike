@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cg3lcyieygcml"]
+[gd_scene load_steps=3 format=3 uid="uid://cg3lcyieygcml"]
 
 [ext_resource type="PackedScene" uid="uid://dn8gfl6fm1wji" path="res://Scene/GameObjects/Board.tscn" id="1_xhtwi"]
+[ext_resource type="PackedScene" uid="uid://cxkgtcbl088dr" path="res://Scene/GameObjects/ControlManager.tscn" id="2_g6ejq"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Board" parent="." instance=ExtResource("1_xhtwi")]
+
+[node name="ControlManager" parent="." node_paths=PackedStringArray("_board") instance=ExtResource("2_g6ejq")]
+_board = NodePath("../Board")
