@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn8gfl6fm1wji"]
+
+[ext_resource type="Script" uid="uid://binu5s4chuadp" path="res://Script/Board.cs" id="1_7d6jb"]
+[ext_resource type="PackedScene" uid="uid://64gqs1xdf4js" path="res://Scene/GameObjects/Candies/Candy.tscn" id="2_t1l2e"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_7d6jb")
+_width = 6
+_height = 8
+_candiesPrefabs = Array[PackedScene]([ExtResource("2_t1l2e")])
