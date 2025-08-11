@@ -1,4 +1,4 @@
-namespace Match3.Script;
+namespace Match3.GameLogic;
 using Godot;
 using System;
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://64gqs1xdf4js"]
 
-[ext_resource type="Script" uid="uid://d30cqa34ye5hp" path="res://Script/Candy.cs" id="1_2bm78"]
+[ext_resource type="Script" uid="uid://d30cqa34ye5hp" path="res://Script/GameLogic/Candy.cs" id="1_2bm78"]
 [ext_resource type="Texture2D" uid="uid://bm88jx63w86cc" path="res://Sprite/candy1.png" id="2_fwuxi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2bm78"]

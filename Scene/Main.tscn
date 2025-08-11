@@ -5,7 +5,7 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="Board" parent="." instance=ExtResource("1_xhtwi")]
-
 [node name="ControlManager" parent="." node_paths=PackedStringArray("_board") instance=ExtResource("2_g6ejq")]
 _board = NodePath("../Board")
+
+[node name="Board" parent="." instance=ExtResource("1_xhtwi")]

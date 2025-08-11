@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dn8gfl6fm1wji"]
 
-[ext_resource type="Script" uid="uid://binu5s4chuadp" path="res://Script/Board.cs" id="1_7d6jb"]
+[ext_resource type="Script" uid="uid://binu5s4chuadp" path="res://Script/GameLogic/Board.cs" id="1_fg06y"]
 [ext_resource type="PackedScene" uid="uid://64gqs1xdf4js" path="res://Scene/GameObjects/Candies/Candy1.tscn" id="2_t1l2e"]
 [ext_resource type="PackedScene" uid="uid://c7i6jx1lgpper" path="res://Scene/GameObjects/Candies/Candy2.tscn" id="3_cn53p"]
 [ext_resource type="PackedScene" uid="uid://cxcntlkrilgrf" path="res://Scene/GameObjects/Candies/Candy3.tscn" id="4_bfo8b"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bmobgncupl444" path="res://Scene/GameObjects/Candies/Candy5.tscn" id="6_12h08"]
 
 [node name="Board" type="Node"]
-script = ExtResource("1_7d6jb")
+script = ExtResource("1_fg06y")
 _width = 6
 _height = 8
 _candiesPrefabs = Array[PackedScene]([ExtResource("2_t1l2e"), ExtResource("3_cn53p"), ExtResource("4_bfo8b"), ExtResource("5_unyoc"), ExtResource("6_12h08")])
