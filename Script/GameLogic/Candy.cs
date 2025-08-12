@@ -1,5 +1,5 @@
-namespace Match3.GameLogic;
-using Match3.GameLogic.Utilities;
+namespace Match3.Script.GameLogic;
+using Utilities;
 using Godot;
 using System;
 

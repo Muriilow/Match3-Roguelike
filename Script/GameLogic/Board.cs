@@ -1,4 +1,4 @@
-namespace Match3.GameLogic;
+namespace Match3.Script.GameLogic;
 using Utilities;
 using Godot;
 using System.Collections.Generic;
@@ -73,10 +73,6 @@ public partial class Board : Node
 		InitializeBoard();
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
 
 	#region Matching Logic
 
@@ -262,15 +258,24 @@ public partial class Board : Node
 		await moveCurrent;
 		GD.Print("-----");
 		//If we find a match process the points and move on, otherwise swap to their positions again 
-		//if (CheckBoard())
-		//{
-		//	targetCandy.WasSelected = true;
-		//	currentCandy.WasSelected = true;
-
+		if (CheckBoard())
+		{
+			targetCandy.WasSelected = true;
+			currentCandy.WasSelected = true;
+			DoMatch(true, false);
+		}
+		else
+			DoSwap(currentCandy, targetCandy);
 		//	StartCoroutine(DoMatch(true, false));
-		//}
-		//else
-		//DoSwap(currentCandy, targetCandy);
+	}
+
+	private void DoMatch(bool subtractMoves, bool multiplyPoints)
+	{
+		//Every candy that is on the list will have the variable asMatched as false
+		foreach (var candyToRemove in _candiesToRemove)
+			candyToRemove.IsMatched = false;
+
+		//_manager.ProcessTurn(subtractMoves, _candiesToRemove, multiplyPoints);	
 	}
 
 	#endregion

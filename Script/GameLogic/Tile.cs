@@ -1,16 +1,9 @@
-namespace Match3.GameLogic;
+namespace Match3.Script.GameLogic;
 using Godot;
 using System;
 
-public class Tile
+public class Tile(bool isUsable, Candy candy)
 {
-    public bool IsUsable { get; set; }
-    public Candy Candy { get; set; }
-    
-    //Constructor
-    public Tile(bool isUsable, Candy candy)
-    {
-        IsUsable = isUsable;
-        Candy = candy;
-    }
+    public bool IsUsable { get; set; } = isUsable;
+    public Candy Candy { get; set; } = candy;
 }

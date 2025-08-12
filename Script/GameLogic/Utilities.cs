@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Match3.GameLogic.Utilities
+namespace Match3.Script.GameLogic.Utilities
 {
     //To get easy to read the match result
     public class MatchResult(List<Candy> connectedCandies, MatchDirection direction)

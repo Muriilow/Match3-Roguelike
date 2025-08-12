@@ -1,4 +1,4 @@
-namespace Match3.GameLogic;
+namespace Match3.Script.GameLogic;
 using Godot;
 using System;
 public partial class ControlManager : Node
